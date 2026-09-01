@@ -70,9 +70,9 @@ pipeline {
 
  
 
-                    docker run -d --name my-web-app -p 80:8080 \ 
+                    docker run -d --name my-web-app -p 80:8080 
 
-                    -v $(pwd)/target:/app \ 
+                    -v $(pwd)/target:/app 
 
                     eclipse-temurin:21-jre-alpine java -jar /app/my-web-app-0.0.1-SNAPSHOT.jar 
 
